@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  php:
+    container_name: php-default
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - /Users/nadeerathilak/working-projects/codes/php_shopping_cart-v1:/var/www/html
